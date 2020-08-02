@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>css layout :D</title>
+      <link href="/2020/08/02/css-layout/"/>
+      <url>/2020/08/02/css-layout/</url>
+      
+        <content type="html"><![CDATA[<h2 id="1-Can-giua-1-phan-tu"><a href="#1-Can-giua-1-phan-tu" class="headerlink" title="1. Căn giữa 1 phần tử"></a>1. Căn giữa 1 phần tử</h2><ul><li><code>place-items: center</code></li></ul><iframe height="265" style="width: 100%;" scrolling="no" title="supercenter" src="https://codepen.io/hungbka/embed/preview/dyGxByG?height=265&theme-id=dark&default-tab=css,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">  See the Pen <a href='https://codepen.io/hungbka/pen/dyGxByG' target="_blank" rel="noopener">supercenter</a> by hungbka  (<a href='https://codepen.io/hungbka' target="_blank" rel="noopener">@hungbka</a>) on <a href='https://codepen.io' target="_blank" rel="noopener">CodePen</a>.</iframe><h2 id="2-Chia-layout-phan-tu-con"><a href="#2-Chia-layout-phan-tu-con" class="headerlink" title="2. Chia layout phần tử con"></a>2. Chia layout phần tử con</h2><ul><li><code>flex: 0 1 &lt;baseWidth&gt;</code></li></ul><iframe height="265" style="width: 100%;" scrolling="no" title="VweoJpP" src="https://codepen.io/hungbka/embed/VweoJpP?height=265&theme-id=dark&default-tab=css,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">  See the Pen <a href='https://codepen.io/hungbka/pen/VweoJpP' target="_blank" rel="noopener">VweoJpP</a> by hungbka  (<a href='https://codepen.io/hungbka' target="_blank" rel="noopener">@hungbka</a>) on <a href='https://codepen.io' target="_blank" rel="noopener">CodePen</a>.</iframe><ul><li><code>grid-template-columns: repeat(auto-fit, minmax(&lt;base&gt;, 1fr))</code></li></ul><iframe height="265" style="width: 100%;" scrolling="no" title="layout child" src="https://codepen.io/hungbka/embed/mdVNZqB?height=265&theme-id=dark&default-tab=css,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">  See the Pen <a href='https://codepen.io/hungbka/pen/mdVNZqB' target="_blank" rel="noopener">layout child</a> by hungbka  (<a href='https://codepen.io/hungbka' target="_blank" rel="noopener">@hungbka</a>) on <a href='https://codepen.io' target="_blank" rel="noopener">CodePen</a>.</iframe><h2 id="3-Set-layout-sidebar"><a href="#3-Set-layout-sidebar" class="headerlink" title="3. Set layout sidebar"></a>3. Set layout sidebar</h2><ul><li><code>grid-template-columns: minmax(&lt;min&gt;, &lt;max&gt;) ...</code></li></ul><iframe height="265" style="width: 100%;" scrolling="no" title="layout sidebar" src="https://codepen.io/hungbka/embed/PoZMrjE?height=265&theme-id=dark&default-tab=html,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">  See the Pen <a href='https://codepen.io/hungbka/pen/PoZMrjE' target="_blank" rel="noopener">layout sidebar</a> by hungbka  (<a href='https://codepen.io/hungbka' target="_blank" rel="noopener">@hungbka</a>) on <a href='https://codepen.io' target="_blank" rel="noopener">CodePen</a>.</iframe><h2 id="4-Chia-layout-co-ban"><a href="#4-Chia-layout-co-ban" class="headerlink" title="4. Chia layout cơ bản"></a>4. Chia layout cơ bản</h2><ul><li><code>grid-template-rows: auto 1fr auto</code></li></ul><iframe height="471" style="width: 100%;" scrolling="no" title="layout basic" src="https://codepen.io/hungbka/embed/KKVOjvJ?height=471&theme-id=dark&default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">  See the Pen <a href='https://codepen.io/hungbka/pen/KKVOjvJ' target="_blank" rel="noopener">layout basic</a> by hungbka  (<a href='https://codepen.io/hungbka' target="_blank" rel="noopener">@hungbka</a>) on <a href='https://codepen.io' target="_blank" rel="noopener">CodePen</a>.</iframe><ul><li><code>grid-template: auto 1fr auto / auto 1fr auto</code></li></ul><iframe height="454" style="width: 100%;" scrolling="no" title="layout basic 2" src="https://codepen.io/hungbka/embed/mdVNZBB?height=454&theme-id=dark&default-tab=css,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">  See the Pen <a href='https://codepen.io/hungbka/pen/mdVNZBB' target="_blank" rel="noopener">layout basic 2</a> by hungbka  (<a href='https://codepen.io/hungbka' target="_blank" rel="noopener">@hungbka</a>) on <a href='https://codepen.io' target="_blank" rel="noopener">CodePen</a>.</iframe><h2 id="5-Clamp-phan-tu"><a href="#5-Clamp-phan-tu" class="headerlink" title="5. Clamp phần tử"></a>5. Clamp phần tử</h2><ul><li><code>clamp(&lt;min&gt;, &lt;actual&gt;, &lt;max&gt;)</code></li></ul><iframe height="472" style="width: 100%;" scrolling="no" title="clamp" src="https://codepen.io/hungbka/embed/oNbKrEB?height=472&theme-id=dark&default-tab=html,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">  See the Pen <a href='https://codepen.io/hungbka/pen/oNbKrEB' target="_blank" rel="noopener">clamp</a> by hungbka  (<a href='https://codepen.io/hungbka' target="_blank" rel="noopener">@hungbka</a>) on <a href='https://codepen.io' target="_blank" rel="noopener">CodePen</a>.</iframe>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> css </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Lời muốn nói!</title>
+      <link href="/2020/06/02/loi-gioi-thieu/"/>
+      <url>/2020/06/02/loi-gioi-thieu/</url>
+      
+        <content type="html"><![CDATA[<p>Xin chào, mình là Hùng. Sau khi học đến năm 3 ngành Điện tử - Viễn thông tại trường Đại học Bách khoa Hà Nội thì mình tự cảm thấy bản thân kém cỏi và chán ngành học này vì 2 lý do. Thứ nhất là không có tiền mua đồ nghề và thứ hai là ngành này quá nhiều lý thuyết về vật lý. Thấy bản thân thật vô dụng nên đã tìm kiếm đâu đó trên mạng nghề nào đó chỉ cần có 1 chiếc máy tính là đủ và mình đã tìm thấy đó là ngành lập trình phần mềm. Mọi thứ mình biết được đến bây giờ cũng là do tự học và tìm hiểu.</p><p>Với kiến thức mà mình đã biết trong lúc học và đi làm, tuy còn hạn chế nhưng mình sẽ chia sẻ cho mọi người… Bên cạnh đó mình cũng biết sơ sơ về lập trình phần cứng (1 phần nhỏ thuộc ngành IOT) mà mình đã biết được khi học ở trường mình cũng sẽ chia sẻ cho mọi người.</p><p>Blog này mình build bằng <code>hexo</code> do một đứa em trong công ty chỉ cho. Ai quan tâm thì ghé qua blog của nó nhé <a href="https://dungnt11.github.io/" target="_blank" rel="noopener">Dungnt11</a></p><p>Cảm ơn mọi người đã ghé qua blog của mình. &lt;3</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Giới thiệu </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
