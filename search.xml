@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>Debounce và Throttle</title>
+      <link href="/2020/08/04/Debounce-va-Throttle/"/>
+      <url>/2020/08/04/Debounce-va-Throttle/</url>
+      
+        <content type="html"><![CDATA[<p><strong>Debounce và Throttle là hai kĩ thuật cơ bản hay được sử dụng để tối ưu sự kiện DOM và trong một số trường hợp nhất định</strong></p><h1 id="1-Debounce"><a href="#1-Debounce" class="headerlink" title="1. Debounce"></a>1. Debounce</h1><ul><li>Chỉ quan tâm tới việc thực thi 1 hàm nào đó sau khoảng thời gian bao lâu.<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">const debounce &#x3D; (func, wait) &#x3D;&gt; &#123;</span><br><span class="line">    let timeout;</span><br><span class="line">    return function() &#123;</span><br><span class="line">      const context &#x3D; this, args &#x3D; arguments;</span><br><span class="line">      const executeFunction &#x3D; function() &#123;</span><br><span class="line">        func.apply(context, args);</span><br><span class="line">      &#125;;</span><br><span class="line">      clearTimeout(timeout);</span><br><span class="line">      timeout &#x3D; setTimeout(executeFunction, wait);</span><br><span class="line">    &#125;;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></li></ul><h1 id="2-Throttle"><a href="#2-Throttle" class="headerlink" title="2. Throttle"></a>2. Throttle</h1><ul><li>Quan tâm tới việc thực thi 1 hàm bao nhiêu lần trong bao lâu.</li><li>Ví dụ: 1 hàm thực thi 1000 lần trong 10s nhưng với <em>throttle</em> trong 100ms thì hàm chỉ thực hiện tối đa được 100 lần: </li></ul><p><code>10s * 1000 = 10000ms10000ms/100ms = 100 (lần)</code></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">const throttle &#x3D; (func, limit) &#x3D;&gt; &#123;</span><br><span class="line">  let lastFunc</span><br><span class="line">  let lastRan</span><br><span class="line">  return function() &#123;</span><br><span class="line">    const context &#x3D; this</span><br><span class="line">    const args &#x3D; arguments</span><br><span class="line">    if (!lastRan) &#123;</span><br><span class="line">      func.apply(context, args)</span><br><span class="line">      lastRan &#x3D; Date.now()</span><br><span class="line">    &#125; else &#123;</span><br><span class="line">      clearTimeout(lastFunc)</span><br><span class="line">      lastFunc &#x3D; setTimeout(function() &#123;</span><br><span class="line">        if ((Date.now() - lastRan) &gt;&#x3D; limit) &#123;</span><br><span class="line">          func.apply(context, args)</span><br><span class="line">          lastRan &#x3D; Date.now()</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;, limit - (Date.now() - lastRan))</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">lastRan: biến check để đảm bảo thực hiện hàm lần cuối cùng</span><br></pre></td></tr></table></figure><iframe height="430" style="width: 100%;" scrolling="no" title="Debounce and throttle" src="https://codepen.io/hungbka/embed/VwawZNw?height=430&theme-id=dark&default-tab=js,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">  See the Pen <a href='https://codepen.io/hungbka/pen/VwawZNw' target="_blank" rel="noopener">Debounce and throttle</a> by hungbka  (<a href='https://codepen.io/hungbka' target="_blank" rel="noopener">@hungbka</a>) on <a href='https://codepen.io' target="_blank" rel="noopener">CodePen</a>.</iframe>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> javascript </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>css layout :D</title>
       <link href="/2020/08/02/css-layout/"/>
       <url>/2020/08/02/css-layout/</url>
