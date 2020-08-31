@@ -4,6 +4,29 @@
   
     
     <entry>
+      <title>Multiselect Checkbox</title>
+      <link href="/2020/08/31/Multiselect-Checkbox/"/>
+      <url>/2020/08/31/Multiselect-Checkbox/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Multiselect-Checkbox"><a href="#Multiselect-Checkbox" class="headerlink" title="Multiselect Checkbox"></a>Multiselect Checkbox</h1><p>Hôm nay mình tiếp tục xậy dựng component multiselect checkbox dùng react hook :D</p><h2 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h2><figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> MultiselectCheckbox = <span class="function">(<span class="params">&#123; options, onChange &#125;</span>) =&gt;</span> &#123;</span><br><span class="line"><span class="comment">// data là biến lưu trữ list checkbox, default được gán bằng props options</span></span><br><span class="line">  <span class="keyword">const</span> [data, setData] = React.useState(options);</span><br><span class="line"></span><br><span class="line"><span class="comment">// Hàm toggle sẽ cập nhật biến checked</span></span><br><span class="line">  <span class="keyword">const</span> toggle = <span class="function">(<span class="params">item</span>) =&gt;</span> &#123;</span><br><span class="line">    data.forEach(<span class="function">(<span class="params">_, key</span>) =&gt;</span> &#123;</span><br><span class="line">      <span class="keyword">if</span> (data[key].label === item.label) data[key].checked = !item.checked;</span><br><span class="line">    &#125;);</span><br><span class="line">    setData([...data]);</span><br><span class="line">    onChange(data);</span><br><span class="line">  &#125;;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> (</span><br><span class="line">    &lt;ul&gt;</span><br><span class="line">      &#123;data.map(<span class="function">(<span class="params">item</span>) =&gt;</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> (</span><br><span class="line">          &lt;li key=&#123;item.label&#125; onClick=&#123;() =&gt; toggle(item)&#125;&gt;</span><br><span class="line">            &lt;input readOnly type=<span class="string">"checkbox"</span> checked=&#123;item.checked || <span class="literal">false</span>&#125; /&gt;</span><br><span class="line">            &#123;item.label&#125;</span><br><span class="line">          &lt;<span class="regexp">/li&gt;</span></span><br><span class="line"><span class="regexp">        );</span></span><br><span class="line"><span class="regexp">      &#125;)&#125;</span></span><br><span class="line"><span class="regexp">    &lt;/u</span>l&gt;</span><br><span class="line">  );</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><ul><li>Cách dùng:</li></ul><figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// option là 1 array</span></span><br><span class="line"><span class="comment">// onChange là 1 function với tham số là 1 mảng.</span></span><br><span class="line">&lt;MultiselectCheckbox</span><br><span class="line">  options=&#123;[&#123; <span class="attr">label</span>: <span class="string">"Item One"</span> &#125;, &#123; <span class="attr">label</span>: <span class="string">"Item Two"</span> &#125;]&#125;</span><br><span class="line">  onChange=&#123;(data) =&gt; &#123;</span><br><span class="line">   <span class="built_in">console</span>.log(data);</span><br><span class="line">  &#125;&#125;</span><br><span class="line">/&gt;</span><br></pre></td></tr></table></figure><ul><li>Demo:</li></ul><p><a href="https://codesandbox.io/s/js-multiselectcheckbox-rq896" target="_blank" rel="noopener">Link demo js</a></p><p><a href="https://codesandbox.io/s/ts-multiselectcheckbox-oonu5" target="_blank" rel="noopener">Link demo ts</a></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> reactjs </tag>
+            
+            <tag> js </tag>
+            
+            <tag> ts </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>React TagInput</title>
       <link href="/2020/08/28/React-TagInput/"/>
       <url>/2020/08/28/React-TagInput/</url>
