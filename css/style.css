@@ -2,6 +2,8 @@
 html {
   background-color: #fff;
   -webkit-font-smoothing: antialiased;
+  background-size: 40px 40px;
+	background-image: linear-gradient(to right, #8080802e 1px, #0000 1px), linear-gradient(to top, #8080802e 1px, #0000 1px);
 }
 
 body {
@@ -11,6 +13,7 @@ body {
   width: 100%;
   margin: 0 auto 30px auto;
   background-color: #fffffe;
+
 }
 
 ::-moz-selection {
@@ -256,6 +259,9 @@ a:hover, a:active {
 .post {
   background-color: #FFF;
   margin: 30px;
+  padding: 15px;
+  border: 1px solid #000;
+  box-shadow: 4px 4px 0 #000;
 }
 
 .post .post-title h1 {
@@ -316,18 +322,16 @@ a:hover, a:active {
 }
 
 .post .post-footer {
-  padding: 0 0 30px 0;
-  border-bottom: 1px solid #f2f2f2;
+  padding-top: 15px;
+  border-top: 1px solid #9e000033;
 }
 
 .post .post-footer .meta {
   max-width: 100%;
-  height: 25px;
   color: #bbbbbb;
 }
 
 .post .post-footer .meta .info {
-  float: left;
   font-size: 12px;
 }
 
