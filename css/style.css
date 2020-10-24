@@ -3,7 +3,7 @@ html {
   background-color: #fff;
   -webkit-font-smoothing: antialiased;
   background-size: 40px 40px;
-	background-image: linear-gradient(to right, #8080802e 1px, #0000 1px), linear-gradient(to top, #8080802e 1px, #0000 1px);
+	background-image: linear-gradient(to right, #0879b127 1px, #0000 1px), linear-gradient(to top, #0879b127 1px, #0000 1px);
 }
 
 body {
@@ -94,12 +94,19 @@ a:hover, a:active {
 .content {
   height: auto;
   float: right;
-  width: 70%;
+  width: 60%;
   margin-top: 60px;
+  margin-right: 12rem;
+}
+
+@media (max-width: 1500px) {
+  .content {
+    margin-right: 4rem;
+  }
 }
 
 .page-top {
-  width: 70%;
+  width: 80%;
   position: fixed;
   right: 0;
   z-index: 3;
@@ -108,6 +115,12 @@ a:hover, a:active {
   border-bottom: 1px solid #f2f2f2;
   display: flex;
   align-items: center;
+}
+
+@media (max-width: 1500px) {
+  .page-top {
+    width: 70%;
+  }
 }
 
 .page-top .nav {
@@ -141,6 +154,7 @@ a:hover, a:active {
   position: relative;
   display: initial;
   padding-right: 20px;
+  font-size: 1.4rem;
 }
 
 .page-top .nav a {
@@ -197,6 +211,12 @@ a:hover, a:active {
   box-shadow: 2px 0 10px rgba(0,0,0,.3);
 }
 
+@media (min-width: 1500px) {
+  .sidebar {
+    width: 20%;
+  }
+}
+
 .sidebar .logo-title {
   text-align: center;
   padding-top: 240px;
@@ -216,7 +236,7 @@ a:hover, a:active {
 }
 
 .sidebar .logo-title .title h3 {
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-size: 2rem;
   font-weight: bold;
   letter-spacing: 2px;
@@ -262,6 +282,7 @@ a:hover, a:active {
   padding: 15px;
   border: 1px solid #000;
   box-shadow: 4px 4px 0 #000;
+  border-radius: 5px;
 }
 
 .post .post-title h1 {
@@ -777,3 +798,15 @@ a.btn {
   }
 }
 /*# sourceMappingURL=style.css.map */
+
+i.fa.fa-facebook-official {
+  color: #0606b7;
+}
+
+i.fa.fa-github {
+  color: #252525;
+}
+
+i.fa.fa-gitlab {
+  color: #e24431;
+}

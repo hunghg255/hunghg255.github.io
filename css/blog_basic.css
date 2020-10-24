@@ -41,14 +41,14 @@
 
 pre {
   font-size: 15px;
-  background-color: #f0f0f0!important;
+  background-color: #282a36!important;
   font-family: 'Roboto Mono','Lucida Console','Trebuchet MS','Courier New', Monaco, courier,'PingFang SC','Hiragino Sans GB','Microsoft Jhenghei','Microsoft YaHei', monospace!important
 }
 
 figure.highlight {
   position: relative!important;
   margin: 1em 0!important;
-  border-radius: 2px!important;
+  border-radius: 5px!important;
   line-height: 1.1em!important;
   background-color: #f8f8f8!important;
   overflow-x: auto!important
@@ -66,18 +66,18 @@ figure.highlight .gutter {
 }
 
 figure.highlight .code pre {
-  padding: 1.2em 1.4em!important;
+  padding: 1.8em 1.4em!important;
   line-height: 1.5em!important;
   margin: 0!important
 }
 
-figure.highlight.html .code:after,figure.highlight.js .code:after,figure.highlight.bash .code:after,figure.highlight.css .code:after,figure.highlight.scss .code:after,figure.highlight.diff .code:after,figure.highlight.java .code:after,figure.highlight.xml .code:after,figure.highlight.python .code:after,figure.highlight.json .code:after,figure.highlight.swift .code:after,figure.highlight.ruby .code:after,figure.highlight.perl .code:after,figure.highlight.php .code:after,figure.highlight.c .code:after,figure.highlight.cpp .code:after {
+figure.highlight.html .code:after,figure.highlight.js .code:after, figure.highlight.jsx .code:after,figure.highlight.bash .code:after,figure.highlight.css .code:after,figure.highlight.scss .code:after,figure.highlight.diff .code:after,figure.highlight.java .code:after,figure.highlight.xml .code:after,figure.highlight.python .code:after,figure.highlight.json .code:after,figure.highlight.swift .code:after,figure.highlight.ruby .code:after,figure.highlight.perl .code:after,figure.highlight.php .code:after,figure.highlight.c .code:after,figure.highlight.cpp .code:after {
   position: absolute!important;
   top: 0!important;
   right: 0!important;
-  color: #ccc!important;
+  color: #fff!important;
   text-align: right!important;
-  font-size: 0.75em!important;
+  font-size: 1em!important;
   padding: 5px 10px 0!important;
   line-height: 15px!important;
   height: 15px!important;
@@ -90,6 +90,9 @@ figure.highlight.html .code:after {
 
 figure.highlight.js .code:after {
   content: "JS"
+}
+figure.highlight.jsx .code:after {
+  content: "JSX"
 }
 
 figure.highlight.bash .code:after {
@@ -165,7 +168,7 @@ pre .function .keyword,pre .constant {
 }
 
 pre .keyword,pre .attribute {
-  color: #e96900!important
+  color: #d874c6!important
 }
 
 pre .number,pre .literal {
@@ -189,11 +192,31 @@ pre .tag .value,pre .string,pre .subst,pre .haskell .type,pre .preprocessor,pre 
 }
 
 pre .comment,pre .java .annotation,pre .python .decorator,pre .template_comment,pre .pi,pre .doctype,pre .shebang,pre .apache .sqbracket,pre .tex .formula {
-  color: #b3b3b3!important
+  color: #009c22!important
 }
 
 pre .deletion {
   color: #BA4545!important
+}
+
+.line {
+  color: #f8f1e1;
+}
+
+.function {
+  color: yellow;
+}
+
+.params {
+  color: #f8f1e1;
+}
+
+.selector-class {
+  color: #50fdae;
+}
+
+.number.number {
+  color: #fbc954 !important;
 }
 
 pre .coffeescript .javascript,pre .javascript .xml,pre .tex .formula,pre .xml .javascript,pre .xml .vbscript,pre .xml .css,pre .xml .cdata {
