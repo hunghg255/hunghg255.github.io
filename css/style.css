@@ -303,12 +303,12 @@ a:hover, a:active {
 }
 
 .post .post-title h3 {
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   letter-spacing: 1px;
   line-height: 1;
   font-weight: 600;
   color: #272343;
-  font-size: 22px;
+  font-size: 24px;
   margin: 0;
 }
 
