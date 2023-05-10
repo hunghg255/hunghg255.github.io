@@ -4,6 +4,7 @@ const nextConfig = {
   images: {
     minimumCacheTTL: 99999999,
     domains: ['images.ctfassets.net'],
+    unoptimized: true,
   },
   httpAgentOptions: {
     keepAlive: false,
